@@ -92,43 +92,27 @@ export default function App() {
       if (possibleValues.includes(e.key) && !changingDirection) {
         switch (e.key) {
           case "ArrowLeft": {
-            if (
-              velocity.x !== KEY_TO_VELOCITY["ArrowRight"].x &&
-              velocity.y !== KEY_TO_VELOCITY["ArrowRight"].y
-            ) {
-              setChangingDirection(true);
-              setVelocity({ x: 0, y: -1 });
-            }
+            setChangingDirection(true);
+            setVelocity({ x: 0, y: -1 });
+
             break;
           }
           case "ArrowDown": {
-            if (
-              velocity.x !== KEY_TO_VELOCITY["ArrowUp"].x &&
-              velocity.y !== KEY_TO_VELOCITY["ArrowUp"].y
-            ) {
-              setChangingDirection(true);
-              setVelocity({ x: 1, y: 0 });
-            }
+            setChangingDirection(true);
+            setVelocity({ x: 1, y: 0 });
+
             break;
           }
           case "ArrowUp": {
-            if (
-              velocity.x !== KEY_TO_VELOCITY["ArrowDown"].x &&
-              velocity.y !== KEY_TO_VELOCITY["ArrowDown"].y
-            ) {
-              setChangingDirection(true);
-              setVelocity({ x: -1, y: 0 });
-            }
+            setChangingDirection(true);
+            setVelocity({ x: -1, y: 0 });
+
             break;
           }
           case "ArrowRight": {
-            if (
-              velocity.x !== KEY_TO_VELOCITY["ArrowLeft"].x &&
-              velocity.y !== KEY_TO_VELOCITY["ArrowLeft"].y
-            ) {
-              setChangingDirection(true);
-              setVelocity({ x: 0, y: 1 });
-            }
+            setChangingDirection(true);
+            setVelocity({ x: 0, y: 1 });
+
             break;
           }
         }
@@ -163,6 +147,16 @@ export default function App() {
           </div>
         );
       })}
+      <div style={{ marginTop: "20px" }}>
+        Created By : Apoorv Kansal. Check out my Github :{" "}
+        <a href="https://github.com/uragirii">here</a>
+      </div>
+      <div style={{ marginTop: "20px" }}>
+        Idea :{" "}
+        <a href="https://twitter.com/neilsardesai/status/1379185826920300545">
+          Tweet
+        </a>
+      </div>
     </div>
   );
 }
